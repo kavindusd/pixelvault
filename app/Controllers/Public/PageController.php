@@ -453,9 +453,9 @@ HTML;
         $idOrSlug = (string) ($params['id'] ?? '');
         
         if (is_numeric($idOrSlug)) {
-            $product = $this->catalog->find((int)$idOrSlug);
+            $product = $this->marketplace->productById((int)$idOrSlug);
         } else {
-            $product = (new \App\Models\MarketplaceModel())->productBySlug($idOrSlug);
+            $product = $this->marketplace->productBySlug($idOrSlug);
         }
 
         if (!$product) {
