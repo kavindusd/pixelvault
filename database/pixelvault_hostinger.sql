@@ -1,8 +1,9 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
 -- PixelVault Deployment Script for Hostinger
 -- This script contains the table structure and essential seed data (Admin account & Site Config).
 -- Existing user accounts, orders, and inquiries are excluded.
 
-SET FOREIGN_KEY_CHECKS = 0;
 
 -- --------------------------------------------------------
 -- Table structure for table `schema_migrations`
