@@ -141,16 +141,16 @@
                   </div>
                 </div>
                 <div class="flex-shrink-0">
-                  <?php 
-                    $vStr = (string)($v['version'] ?? '');
-                    $unlocked = array_filter(explode(',', $access['downloaded_versions'] ?? ''));
-                    $isOwned = ($access !== null) && (
-                        $vStr === $access['purchased_version'] || 
-                        in_array($vStr, $unlocked, true)
-                    );
-                    // They can download if they own it OR if they haven't reached the limit yet
-                    $canGetThis = $isOwned || ($access !== null && !$limitReached);
-                  ?>
+                    <?php 
+                      $vStr = (string)($v['version'] ?? '');
+                      $unlocked = $access ? array_filter(explode(',', $access['downloaded_versions'] ?? '')) : [];
+                      $isOwned = ($access !== null) && (
+                          $vStr === ($access['purchased_version'] ?? '') || 
+                          in_array($vStr, $unlocked, true)
+                      );
+                      // They can download if they own it OR if they haven't reached the limit yet
+                      $canGetThis = $isOwned || ($access !== null && !$limitReached);
+                    ?>
                   <?php if ($canGetThis): ?>
                     <a href="/download/<?= e((string)($product['id'] ?? '')) ?>/<?= e($vStr) ?>" class="h-10 px-4 rounded-xl bg-secondary hover:bg-ink hover:text-ink-foreground text-xs font-bold flex items-center gap-2 transition-all">
                       <?= icon_svg('ArrowDownToLine', 'h-3.5 w-3.5') ?> Download
