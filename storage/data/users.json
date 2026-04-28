@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Demo Member",
+    "email": "demo@pixelvault.app",
+    "password": "password123",
+    "avatar": "https://ui-avatars.com/api/?name=Vault+Member+Demo&background=FBBC05&color=fff",
+    "role": "Regular Member"
+  },
+  {
+    "name": "Admin User",
+    "email": "admin@pixelvault.app",
+    "password": "adminpassword",
+    "avatar": "https://ui-avatars.com/api/?name=Admin+User&background=000&color=fff",
+    "role": "Administrator"
+  }
+]

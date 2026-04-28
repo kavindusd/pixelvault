@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Starter",
+    "price": "0",
+    "desc": "Perfect for testing and small personal projects.",
+    "icon": "Zap",
+    "features": [
+      "Access to 100+ Free Items",
+      "Limited Updates",
+      "Community Support",
+      "Single Site Use"
+    ],
+    "button": "Get Started",
+    "popular": false
+  },
+  {
+    "name": "Pro Explorer",
+    "price": "29",
+    "desc": "The sweet spot for freelancers and growing agencies.",
+    "icon": "Shield",
+    "features": [
+      "Access to All 12,400+ Items",
+      "Lifetime Version Updates",
+      "Priority Support",
+      "Unlimited Site Use",
+      "Cloudflare R2 Access"
+    ],
+    "button": "Join Prop Pack",
+    "popular": true
+  },
+  {
+    "name": "Ultimate Vault",
+    "price": "99",
+    "desc": "For those who want everything, forever. No limits.",
+    "icon": "Crown",
+    "features": [
+      "Everything in Pro",
+      "White-label Support",
+      "LTD Access to Future Addons",
+      "Dedicated Account Manager",
+      "Custom Item Requests"
+    ],
+    "button": "Own the Vault",
+    "popular": false
+  }
+]

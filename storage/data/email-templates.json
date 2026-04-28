@@ -1,0 +1,86 @@
+{
+  "emailTemplates": {
+    "update_notification": {
+      "subject": "New Update: {{product_name}} v{{version}}",
+      "body": "Hi {{user_name}},\n\nA new version of {{product_name}} is now available in your Vault!\n\nVersion: {{version}}\nRelease Notes:\n{{release_notes}}\n\nLog in now to download it.",
+      "cta": "Download Now"
+    },
+    "product_updated": {
+      "subject": "{{product_name}} has been updated",
+      "body": "Hi {{user_name}},\n\nWe wanted to let you know that {{product_name}}, which is in your Vault, has been updated.\n\n{{change_note}}\n\nLog in to your account to see the latest details.",
+      "cta": "View in Vault"
+    },
+    "welcome_email": {
+      "subject": "Welcome to PixelVault, {{user_name}}!",
+      "body": "Hi {{user_name}},\n\nWelcome to the premier marketplace for GPL plugins and themes. Your vault is ready!\n\nStart exploring the marketplace and build something amazing.",
+      "cta": "Explore Marketplace"
+    },
+    "contact_form": {
+      "subject": "New Contact Message: {{subject}}",
+      "body": "You have received a new message from your website contact form.\n\nFrom: {{name}} ({{email}})\nSubject: {{subject}}\n\nMessage:\n{{message}}",
+      "cta": "Reply to User"
+    },
+    "auth_verification": {
+      "subject": "Verification Code: {{code}}",
+      "body": "Hi {{user_name}},\n\nYour verification code is: {{code}}\n\nThis code will expire in 10 minutes. If you did not request this, please secure your account immediately.",
+      "cta": ""
+    },
+    "password_reset": {
+      "subject": "Reset Your Password",
+      "body": "Hi {{user_name}},\n\nYou requested a password reset. Click the button below to set a new password.\n\nThis link will expire in 1 hour. If you did not request this, you can safely ignore this email.",
+      "cta": "Reset Password"
+    }
+  },
+  "templateVariables": [
+    {
+      "tag": "{{user_name}}",
+      "desc": "Customer's name",
+      "val": "John"
+    },
+    {
+      "tag": "{{name}}",
+      "desc": "Sender's name (contact form)",
+      "val": "Jane Doe"
+    },
+    {
+      "tag": "{{email}}",
+      "desc": "Sender's email (contact form)",
+      "val": "jane@example.com"
+    },
+    {
+      "tag": "{{subject}}",
+      "desc": "Message subject",
+      "val": "Question about license"
+    },
+    {
+      "tag": "{{message}}",
+      "desc": "Full message content",
+      "val": "Hello, I have a question..."
+    },
+    {
+      "tag": "{{product_name}}",
+      "desc": "Product name",
+      "val": "Elementor Pro"
+    },
+    {
+      "tag": "{{version}}",
+      "desc": "New version",
+      "val": "3.22.0"
+    },
+    {
+      "tag": "{{release_notes}}",
+      "desc": "Changelog",
+      "val": "• Security patch\n• Speed improvements"
+    },
+    {
+      "tag": "{{change_note}}",
+      "desc": "Short note about what changed (product_updated template)",
+      "val": "Improved compatibility and updated documentation."
+    },
+    {
+      "tag": "{{login_url}}",
+      "desc": "Portal link",
+      "val": "#"
+    }
+  ]
+}

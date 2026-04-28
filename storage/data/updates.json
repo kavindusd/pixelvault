@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Elementor Pro",
+    "cat": "Page Builder",
+    "ver": "3.21.4",
+    "date": "2 hours ago",
+    "size": "7.2MB",
+    "status": "New"
+  },
+  {
+    "id": 2,
+    "name": "Yoast SEO Premium",
+    "cat": "SEO",
+    "ver": "22.1",
+    "date": "Yesterday",
+    "size": "12.4MB",
+    "status": "Latest"
+  },
+  {
+    "id": 3,
+    "name": "WP Rocket",
+    "cat": "Performance",
+    "ver": "3.16.2",
+    "date": "2 days ago",
+    "size": "4.1MB",
+    "status": "Bug Fix"
+  },
+  {
+    "id": 4,
+    "name": "Divi Builder",
+    "cat": "Theme",
+    "ver": "4.27.1",
+    "date": "3 days ago",
+    "size": "15.8MB",
+    "status": "Latest"
+  },
+  {
+    "id": 5,
+    "name": "Astra Pro",
+    "cat": "Theme",
+    "ver": "4.6.5",
+    "date": "1 week ago",
+    "size": "2.3MB",
+    "status": "Update"
+  },
+  {
+    "id": 6,
+    "name": "Rank Math Pro",
+    "cat": "SEO",
+    "ver": "3.0.62",
+    "date": "1 week ago",
+    "size": "8.9MB",
+    "status": "Latest"
+  },
+  {
+    "id": 7,
+    "name": "Bricks Builder",
+    "cat": "Page Builder",
+    "ver": "1.9.9",
+    "date": "2 weeks ago",
+    "size": "5.4MB",
+    "status": "Security"
+  },
+  {
+    "id": 8,
+    "name": "GP Premium",
+    "cat": "Theme",
+    "ver": "2.4.1",
+    "date": "2 weeks ago",
+    "size": "1.1MB",
+    "status": "Latest"
+  }
+]

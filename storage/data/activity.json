@@ -1,0 +1,56 @@
+{
+  "systemActivity": [
+    {
+      "user": "Demo Member",
+      "action": "purchased",
+      "product": "WP Rocket v3.16",
+      "amount": "$49.00",
+      "time": "2 min ago",
+      "status": "completed"
+    },
+    {
+      "user": "Sarah Collins",
+      "action": "downloaded",
+      "product": "Astra Pro v4.2",
+      "amount": "$0.00",
+      "time": "14 min ago",
+      "status": "completed"
+    },
+    {
+      "user": "Studio Ark",
+      "action": "purchased",
+      "product": "Genesis Bundle",
+      "amount": "$299.00",
+      "time": "1 hr ago",
+      "status": "completed"
+    },
+    {
+      "user": "Alex Rivet",
+      "action": "refund req.",
+      "product": "Yoast SEO Premium",
+      "amount": "-$49.00",
+      "time": "3 hrs ago",
+      "status": "pending"
+    }
+  ],
+  "updateQueue": [
+    {
+      "product": "Elementor Pro",
+      "version": "3.22.0",
+      "status": "pending",
+      "date": "Today"
+    },
+    {
+      "product": "Yoast SEO",
+      "version": "22.2",
+      "status": "pending",
+      "date": "Today"
+    },
+    {
+      "product": "WP Rocket",
+      "version": "3.17.2",
+      "status": "pending",
+      "date": "Yesterday"
+    }
+  ]
+}

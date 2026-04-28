@@ -1,0 +1,52 @@
+{
+  "adminStats": [
+    {
+      "label": "Revenue",
+      "value": "$583",
+      "delta": "+12.4%",
+      "icon": "TrendingUp",
+      "color": "text-emerald-500"
+    },
+    {
+      "label": "Orders",
+      "value": "6",
+      "delta": "+4 today",
+      "icon": "Activity",
+      "color": "text-blue-500"
+    },
+    {
+      "label": "Products",
+      "value": "9",
+      "delta": "+0 Plugins",
+      "icon": "Package",
+      "color": "text-purple-500"
+    },
+    {
+      "label": "Sync Status",
+      "value": "Idle",
+      "delta": "● Ready",
+      "icon": "Zap",
+      "color": "text-muted-foreground"
+    }
+  ],
+  "platformStats": [
+    {
+      "label": "Active Members",
+      "value": "2,481",
+      "pct": 72,
+      "color": "bg-blue-500"
+    },
+    {
+      "label": "Products",
+      "value": "9",
+      "pct": 45,
+      "color": "bg-orange-500"
+    },
+    {
+      "label": "Total Sales",
+      "value": "6",
+      "pct": 60,
+      "color": "bg-emerald-500"
+    }
+  ]
+}
