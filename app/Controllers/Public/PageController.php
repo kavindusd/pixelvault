@@ -461,7 +461,7 @@ HTML;
         if (!$product) {
             $this->render('Public/pages/not-found', [
                 'pageTitle' => 'Not Found - ' . app_config('name'),
-                'currentPath' => '/product/' . $productId,
+                'currentPath' => '/product/' . $idOrSlug,
                 'navigation' => $this->datasets->allOrEmpty('navigation'),
                 'cartCount' => $this->cart->count(),
                 'user' => $this->auth->user(),
@@ -469,6 +469,7 @@ HTML;
             return;
         }
 
+        $productId = (int) $product['id'];
         $user = $this->auth->user();
         $userId = (int) ($user['id'] ?? 0);
         $access = $userId > 0 ? $this->marketplace->productAccessFor($userId, $productId) : null;
