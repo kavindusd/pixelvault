@@ -450,8 +450,13 @@ HTML;
      */
     public function product(array $params = []): void
     {
-        $productId = (int) ($params['id'] ?? 0);
-        $product = $this->catalog->find($productId);
+        $idOrSlug = (string) ($params['id'] ?? '');
+        
+        if (is_numeric($idOrSlug)) {
+            $product = $this->catalog->find((int)$idOrSlug);
+        } else {
+            $product = (new \App\Models\MarketplaceModel())->productBySlug($idOrSlug);
+        }
 
         if (!$product) {
             $this->render('Public/pages/not-found', [

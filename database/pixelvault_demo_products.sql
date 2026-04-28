@@ -6,8 +6,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- --------------------------------------------------------
 -- Clear existing content to prevent duplicates
 -- --------------------------------------------------------
-TRUNCATE TABLE `product_versions`;
-TRUNCATE TABLE `products`;
+DELETE FROM `product_versions`;
+DELETE FROM `products`;
 
 -- --------------------------------------------------------
 -- Insert Demo Products

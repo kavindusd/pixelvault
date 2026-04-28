@@ -80,22 +80,39 @@ final class MarketplaceModel
      */
     public function productById(int $id): ?array
     {
+        return $this->productByField('p.id', (string)$id);
+    }
+
+    /**
+     * @return array<string, mixed>|null
+     */
+    public function productBySlug(string $slug): ?array
+    {
+        return $this->productByField('p.slug', $slug);
+    }
+
+    /**
+     * @return array<string, mixed>|null
+     */
+    private function productByField(string $field, string $value): ?array
+    {
         $stmt = $this->db->prepare(
-            'SELECT p.id, p.title, p.slug, p.price, p.discount_price, p.current_version, p.last_updated_at,
+            "SELECT p.id, p.title, p.slug, p.price, p.discount_price, p.current_version, p.last_updated_at,
                     p.image_url, p.short_description, p.description, p.key_features, p.demo_url,
                     p.technical_info, p.file_path, c.name AS category_name
              FROM products p
              INNER JOIN categories c ON c.id = p.category_id
-             WHERE p.id = :id AND p.is_active = 1
-             LIMIT 1'
+             WHERE {$field} = :val AND p.is_active = 1
+             LIMIT 1"
         );
-        $stmt->execute(['id' => $id]);
+        $stmt->execute(['val' => $value]);
         $row = $stmt->fetch();
 
         if (!is_array($row)) {
             return null;
         }
 
+        $id = (int) $row['id'];
         $product = $this->mapProductRow($row);
         $latest = $this->latestVersionForProduct($id);
         $product['latestVer'] = $latest ?? $product['ver'];
