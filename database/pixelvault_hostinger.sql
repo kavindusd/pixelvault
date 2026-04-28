@@ -100,7 +100,7 @@ CREATE TABLE `product_versions` (
     `version` VARCHAR(50) NOT NULL,
     `changelog` TEXT NULL,
     `file_path` VARCHAR(255) NOT NULL,
-    `file_size_bytes BIGINT UNSIGNED NULL,
+    `file_size_bytes` BIGINT UNSIGNED NULL,
     `uploaded_by` BIGINT UNSIGNED NULL,
     `is_current` TINYINT(1) NOT NULL DEFAULT 0,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
