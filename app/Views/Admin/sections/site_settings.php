@@ -37,7 +37,10 @@ $configs = $configModel->getByGroup($activeGroup);
                             <code class="text-[9px] text-primary/60 font-mono"><?= e($config['key']) ?></code>
                         </div>
                         
-                        <?php if ($config['type'] === 'file'): ?>
+                        <?php 
+                        $type = trim(strtolower((string)($config['type'] ?? 'text')));
+                        if ($type === 'file'): 
+                        ?>
                             <div class="flex items-center gap-6 p-6 rounded-2xl bg-secondary/20 border border-border">
                                 <div class="h-16 w-16 rounded-xl bg-background border border-border flex items-center justify-center overflow-hidden">
                                     <?php if ($config['value']): ?>

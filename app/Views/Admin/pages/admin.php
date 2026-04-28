@@ -16,9 +16,9 @@ $navItems = [
     'email' => ['label' => 'Email Editor', 'icon' => 'Mail'],
     'categories_admin' => ['label' => 'Categories', 'icon' => 'Tag'],
     'site_settings' => ['label' => 'Site Configuration', 'icon' => 'Settings'],
-    'inbox' => ['label' => 'Inquiries', 'icon' => 'Mail'],
+    'inbox' => ['label' => 'Inquiries', 'icon' => 'Inbox'],
     'security' => ['label' => 'Security & SEO', 'icon' => 'Shield'],
-    'accounts' => ['label' => 'Admin Accounts', 'icon' => 'ShieldAlert'],
+    'accounts' => ['label' => 'Admin Accounts', 'icon' => 'BadgeCheck'],
 ];
 ?>
 <main class="min-h-screen flex bg-[hsl(var(--background))] relative overflow-hidden">
