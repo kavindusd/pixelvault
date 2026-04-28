@@ -4,11 +4,23 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- This script contains the table structure and essential seed data (Admin account & Site Config).
 -- Existing user accounts, orders, and inquiries are excluded.
 
+-- --------------------------------------------------------
+-- CLEANUP: Drop existing tables in correct dependency order
+-- --------------------------------------------------------
+DROP TABLE IF EXISTS `purchases`;
+DROP TABLE IF EXISTS `product_versions`;
+DROP TABLE IF EXISTS `orders`;
+DROP TABLE IF EXISTS `products`;
+DROP TABLE IF EXISTS `categories`;
+DROP TABLE IF EXISTS `users`;
+DROP TABLE IF EXISTS `admins`;
+DROP TABLE IF EXISTS `site_configs`;
+DROP TABLE IF EXISTS `inquiries`;
+DROP TABLE IF EXISTS `schema_migrations`;
 
 -- --------------------------------------------------------
 -- Table structure for table `schema_migrations`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `schema_migrations`;
 CREATE TABLE `schema_migrations` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `migration` VARCHAR(255) NOT NULL UNIQUE,
@@ -18,7 +30,6 @@ CREATE TABLE `schema_migrations` (
 -- --------------------------------------------------------
 -- Table structure for table `users`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(120) NOT NULL,
@@ -38,7 +49,6 @@ CREATE TABLE `users` (
 -- --------------------------------------------------------
 -- Table structure for table `admins`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `admins`;
 CREATE TABLE `admins` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(120) NOT NULL,
@@ -52,7 +62,6 @@ CREATE TABLE `admins` (
 -- --------------------------------------------------------
 -- Table structure for table `categories`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(120) NOT NULL UNIQUE,
@@ -67,7 +76,6 @@ CREATE TABLE `categories` (
 -- --------------------------------------------------------
 -- Table structure for table `products`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `category_id` BIGINT UNSIGNED NOT NULL,
@@ -94,7 +102,6 @@ CREATE TABLE `products` (
 -- --------------------------------------------------------
 -- Table structure for table `product_versions`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `product_versions`;
 CREATE TABLE `product_versions` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `product_id` BIGINT UNSIGNED NOT NULL,
@@ -113,7 +120,6 @@ CREATE TABLE `product_versions` (
 -- --------------------------------------------------------
 -- Table structure for table `orders`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `order_number` VARCHAR(40) NOT NULL UNIQUE,
@@ -130,7 +136,6 @@ CREATE TABLE `orders` (
 -- --------------------------------------------------------
 -- Table structure for table `purchases`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `purchases`;
 CREATE TABLE `purchases` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `user_id` BIGINT UNSIGNED NOT NULL,
@@ -151,7 +156,6 @@ CREATE TABLE `purchases` (
 -- --------------------------------------------------------
 -- Table structure for table `site_configs`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `site_configs`;
 CREATE TABLE `site_configs` (
     `key` VARCHAR(50) NOT NULL PRIMARY KEY,
     `group` VARCHAR(50) NOT NULL DEFAULT 'general',
@@ -164,7 +168,6 @@ CREATE TABLE `site_configs` (
 -- --------------------------------------------------------
 -- Table structure for table `inquiries`
 -- --------------------------------------------------------
-DROP TABLE IF EXISTS `inquiries`;
 CREATE TABLE `inquiries` (
     `id` BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     `name` VARCHAR(120) NOT NULL,
