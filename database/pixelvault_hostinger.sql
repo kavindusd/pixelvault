@@ -200,6 +200,7 @@ VALUES
 -- Default Site Configs
 INSERT INTO `site_configs` (`key`, `group`, `label`, `type`, `value`) VALUES
     ('site_name', 'branding', 'Site Name', 'text', 'PixelVault'),
+    ('site_logo', 'branding', 'Site Logo', 'file', ''),
     ('site_theme', 'branding', 'Color Theme', 'text', 'vivid_orange'),
     ('primary_color', 'branding', 'Primary Color', 'color', '#f97316'),
     ('site_tagline', 'branding', 'Site Tagline', 'textarea', 'Premium WordPress resources for less.'),

@@ -24,7 +24,7 @@ $configs = $configModel->getByGroup($activeGroup);
     </div>
 
     <div class="p-8 rounded-[2rem] border border-border bg-card shadow-soft relative overflow-hidden">
-        <form action="/admin/save-config" method="POST" enctype="multipart/form-data" class="space-y-8">
+        <form action="/admin/settings/save" method="POST" enctype="multipart/form-data" class="space-y-8">
             <input type="hidden" name="group" value="<?= e($activeGroup) ?>">
             
             <div class="grid gap-8">
