@@ -1,0 +1,103 @@
+{
+  "categories": [
+    {
+      "icon": "Layout",
+      "name": "Page Builders",
+      "count": 142,
+      "hue": "from-primary/20 to-primary/5",
+      "desc": "Drag-and-drop builders like Elementor, Divi, and Bricks."
+    },
+    {
+      "icon": "ShoppingBag",
+      "name": "WooCommerce",
+      "count": 386,
+      "hue": "from-purple-400/20 to-purple-400/5",
+      "desc": "E-commerce extensions, payment gateways, and checkout tools."
+    },
+    {
+      "icon": "Search",
+      "name": "SEO & Marketing",
+      "count": 218,
+      "hue": "from-emerald-400/20 to-emerald-400/5",
+      "desc": "Search engine optimization and marketing automation tools."
+    },
+    {
+      "icon": "Mail",
+      "name": "Email & Forms",
+      "count": 94,
+      "hue": "from-amber-400/20 to-amber-400/5",
+      "desc": "Form builders, newsletter integrations, and SMTP plugins."
+    },
+    {
+      "icon": "BarChart3",
+      "name": "Analytics",
+      "count": 67,
+      "hue": "from-blue-400/20 to-blue-400/5",
+      "desc": "Visitor tracking, heatmaps, and data visualization tools."
+    },
+    {
+      "icon": "Palette",
+      "name": "Themes",
+      "count": 521,
+      "hue": "from-pink-400/20 to-pink-400/5",
+      "desc": "Premium themes and frameworks for every industry."
+    },
+    {
+      "icon": "Shield",
+      "name": "Security",
+      "count": 132,
+      "hue": "from-red-400/20 to-red-400/5",
+      "desc": "Firewalls, malware scanners, and login protection."
+    },
+    {
+      "icon": "Zap",
+      "name": "Performance",
+      "count": 88,
+      "hue": "from-cyan-400/20 to-cyan-400/5",
+      "desc": "Caching, image optimization, and database cleanup."
+    }
+  ],
+  "platformLogos": [
+    {
+      "name": "WordPress",
+      "slug": "wordpress"
+    },
+    {
+      "name": "Elementor",
+      "slug": "elementor"
+    },
+    {
+      "name": "WooCommerce",
+      "slug": "woocommerce",
+      "scale": 1.6
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe"
+    },
+    {
+      "name": "PayPal",
+      "slug": "paypal"
+    },
+    {
+      "name": "Cloudflare",
+      "slug": "cloudflare"
+    },
+    {
+      "name": "Mailchimp",
+      "slug": "mailchimp"
+    },
+    {
+      "name": "Hostinger",
+      "slug": "hostinger"
+    },
+    {
+      "name": "WP Engine",
+      "slug": "wpengine"
+    },
+    {
+      "name": "GoDaddy",
+      "slug": "godaddy"
+    }
+  ]
+}

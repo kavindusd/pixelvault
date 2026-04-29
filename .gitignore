@@ -1,0 +1,17 @@
+# Environment
+.env
+
+# Logs and Temp
+storage/logs/*.log
+storage/temp/*
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Private Data
+appDataDir/
+.gemini/
+
+# Product Uploads (Optional: ignore if you don't want to upload your ZIPs)
+# storage/files/products/*.zip

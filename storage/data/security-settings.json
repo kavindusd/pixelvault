@@ -1,0 +1,49 @@
+{
+  "securitySettings": [
+    {
+      "id": "https",
+      "icon": "Server",
+      "label": "Force HTTPS Required",
+      "d": "Redirects all HTTP requests.",
+      "status": true
+    },
+    {
+      "id": "signed",
+      "icon": "Fingerprint",
+      "label": "Signed URLs",
+      "d": "Expiring links for downloads.",
+      "status": true
+    },
+    {
+      "id": "captcha",
+      "icon": "ShieldCheck",
+      "label": "CAPTCHA Security",
+      "d": "Protects against bots.",
+      "status": true
+    },
+    {
+      "id": "ratelimit",
+      "icon": "Eye",
+      "label": "Rate Limiting",
+      "d": "Protects API resources.",
+      "status": true
+    }
+  ],
+  "seoSettings": [
+    {
+      "label": "Clean URLs Implementation",
+      "d": "Removes .php or .html extensions from links.",
+      "status": "Active"
+    },
+    {
+      "label": "Auto-Generate Sitemap.xml",
+      "d": "Automatically notifies search engines of updates.",
+      "action": "Rebuild"
+    },
+    {
+      "label": "Meta Title & Descriptions",
+      "d": "Dynamic generation of SEO metadata.",
+      "status": "Configured"
+    }
+  ]
+}
